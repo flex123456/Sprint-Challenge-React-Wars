@@ -8,7 +8,7 @@ function CardData() {
     useEffect(() => {
     axios
         .get('https://swapi.co/api/people/')
-    .then(res => setStarData(res.data.results))
+        .then(res => setStarData(res.data.results))
         .catch(err => console.log(err))
     },[])
     return starData.map(item => <CreateCard data={item}/>)

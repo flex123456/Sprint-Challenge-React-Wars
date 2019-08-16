@@ -4,7 +4,7 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 const CreateCard = (props) => (
   <Card>
     <Card.Content>
-      <Image href={props.data.homeworld} alt='homeworld'/>
+      <Image src='https://starwarsblog.starwars.com/wp-content/uploads/sites/6/2013/12/NeoCrusaders.jpg' alt='homeworld'/>
       <Card.Header>Name: {props.data.name}</Card.Header>
       <Card.Meta>Birth Year: {props.data.birth_year}</Card.Meta>
       <Card.Description>
